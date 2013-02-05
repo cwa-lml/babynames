@@ -22,6 +22,8 @@
                 margin-bottom: 10px;
                 background-color: #cde;
             }
+            svg {
+            }
             .charts h2 {
                 margin-bottom: 0;
             }
@@ -39,6 +41,25 @@
                 color: #3880aa;
                 font-weight: normal;
             }
+            figure {
+                width: 460px;
+                height: 400px;
+                margin-left: -28px;
+            }
+            /* Portrait tablet to landscape and desktop */
+            @media (min-width: 768px) and (max-width: 979px) {
+                figure {
+                    width: 400px;
+                    height: 360px;
+                }
+             }
+            /* Landscape phones and down */
+            @media (max-width: 480px) {
+                figure {
+                    width: 300px;
+                    height: 260px;
+                }
+             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -85,7 +106,7 @@
                     <h2>Girls</h2>
                     <div>
                         <h3 id="girl_heading">Popular girls names, 2004 &#8211; 2012</h3>
-                        <figure style="width: 460px; height: 400px; margin-left:0;" id="girlChart"></figure>
+                        <figure id="girlChart"></figure>
                     </div>
                     <p>Choose any of the hundred most popular girls names in the period 2004 &#8211; 2012 to see how many girls were given that name for a given year.</p>
                     <p><select class="select_girl"></select></p>
@@ -94,7 +115,7 @@
                     <h2>Boys</h2>
                     <div>
                         <h3 id="boy_heading">Popular boys names, 2004 &#8211; 2012</h3>
-                        <figure style="width: 460px; height: 400px; margin-left:0;" id="boyChart"></figure>
+                        <figure id="boyChart"></figure>
                     </div>
                     <p>Choose any of the hundred most popular boys names in the period 2004 &#8211; 2012 to see how many boys were given that name for a given year.</p>
                     <p><select class="select_boy"></select></p>
