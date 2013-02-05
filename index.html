@@ -180,6 +180,7 @@
                         if ( girls[ind].Name == girl ){
 
                             var data_girls = data_empty_girls;
+                            data_girls.main[0].data = [];
 
                             $.each(girls[ind], function(index, value){
                                 if ( index != 'Name' ){
@@ -205,6 +206,7 @@
                         if ( boys[ind].Name == boy ){
 
                             var data_boys = data_empty_boys;
+                            data_boys.main[0].data = [];
 
                             $.each(boys[ind], function(index, value){
                                 if ( index != 'Name' ){
